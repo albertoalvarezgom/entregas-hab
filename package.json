@@ -1,0 +1,24 @@
+{
+  "name": "entregas-hab",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "browser-sync start --server html --files html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/albertoalvarezgom/entregas-hab.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/albertoalvarezgom/entregas-hab/issues"
+  },
+  "homepage": "https://github.com/albertoalvarezgom/entregas-hab#readme",
+  "devDependencies": {
+    "browser-sync": "^2.26.7"
+  }
+}
