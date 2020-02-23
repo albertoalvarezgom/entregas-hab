@@ -1,122 +1,138 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
-    <meta name="entrega" content="Ejercicio práctico - Módulo 1 HTML"/>
-    <script src=/js/entrega-4/conversion.js></script>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="entrega" content="Ejercicio práctico - Módulo 1 HTML" />
+    <!-- <script src=/js/entrega-4/conversion.js></script> -->
+    <link rel="stylesheet" href="/css/estilos.css" />
     <title>Ejercicio HTML</title>
-</head>
-<body>
+  </head>
+  <body>
     <header>
-        <nav>
-            <ul>
-                <li><a href="">Lorem ipsum</a></li>
-                <li><a href="">Lorem ipsum</a></li>
-            </ul>
-
-                <h1>Vacas</h1>
-
-                <a href="" id="comprar">Comprar</a>  
-        </nav>
+      <nav>
+        <ul>
+          <li><a href="">Lorem ipsum</a></li>
+          <li><a href="">Lorem ipsum</a></li>
+        </ul>
+      </nav>
+      <h1>Vacas</h1>
+      <a href="" id="comprar">Comprar</a>
     </header>
     <main>
-        <article id="vacas">
-            <h2>Lorem ipsum</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                Curabitur tempor diam at pellentesque laoreet. Sed dapibus
-                sem tellus, non efficitur orci molestie mollis. Morbi venenatis
-                gravida ex, eu pharetra urna volutpat at. Curabitur eget
-                faucibus magna. Integer a justo ligula.</p>
-            <p>Nam purus nisl, blandit eget iaculis at, interdum et nulla.
-                Mauris ut ante dignissim, accumsan neque at, vulputate
-                massa. Nulla lobortis.</p>
-            <p>Nam purus nisl, blandit eget iaculis at, interdum et nulla.
-                Mauris ut ante dignissim, accumsan neque at, vulputate
-                massa. Nulla lobortis, sapien sit amet hendrerit ullamcorper,
-                risus magna venenatis elit, nec condimentum nisl massa id ex.
-                Sed fermentum orci nec erat cursus cursus. Integer bibendum
-                lacus molestie metus iaculis, ac hendrerit diam ullamcorper.
-                Mauris placerat arcu pellentesque imperdiet pellentesque.</p>
+      <section id="vacas">
+        <h2>Lorem ipsum</h2>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur
+          tempor diam at pellentesque laoreet. Sed dapibus sem tellus, non
+          efficitur orci molestie mollis. Morbi venenatis gravida ex, eu
+          pharetra urna volutpat at. Curabitur eget faucibus magna. Integer a
+          justo ligula. Nam purus nisl, blandit eget iaculis at, interdum et
+          nulla. Mauris ut ante dignissim, accumsan neque at, vulputate massa.
+          Nulla lobortis. Nam purus nisl, blandit eget iaculis at, interdum et
+          nulla. Mauris ut ante dignissim, accumsan neque at, vulputate massa.
+          Nulla lobortis, sapien sit amet hendrerit ullamcorper, risus magna
+          venenatis elit, nec condimentum nisl massa id ex. Sed fermentum orci
+          nec erat cursus cursus. Integer bibendum lacus molestie metus iaculis,
+          ac hendrerit diam ullamcorper. Mauris placerat arcu pellentesque
+          imperdiet pellentesque.
+        </p>
 
-            <ul id="lista-vacas">
-                <li>
-                    <img src="media/img.png" alt="Foto de una vaca">
-                    <section>
-                        <h3>Vaca 1</h3>
-                        <p>Nulla lobortis, sapien sit amet
-                            hendrerit ullamcorper, risus magna
-                            venenatis elit, nec condimentum
-                            nisl massa id ex. Sed fermentum
-                            orci nec erat cursus cursus</p>
-                        <h4><a href="">Comprar</a></h4>
-                    </section>
-                </li>
-                <li>
-                    <img src="media/img.png" alt="Foto de una vaca">
-                    <section>
-                        <h3>Vaca 2</h3>
-                        <p>Nulla lobortis, sapien sit amet
-                            hendrerit ullamcorper, risus magna
-                            venenatis elit, nec condimentum
-                            nisl massa id ex. Sed fermentum
-                            orci nec erat cursus cursus</p>
-                            <h4><a href="">Comprar</a></h4>
-                    </section>
-                </li>
-                <li>
-                    <img src="media/img.png" alt="Foto de una vaca">
-                    <section>
-                        <h3>Vaca 3</h3>
-                        <p>Nulla lobortis, sapien sit amet
-                            hendrerit ullamcorper, risus magna
-                            venenatis elit, nec condimentum
-                            nisl massa id ex. Sed fermentum
-                            orci nec erat cursus cursus</p>
-                            <h4><a href="">Comprar</a></h4>
-                    </section>
-                </li>
-            </ul>
-        </article>
-        <section id="formulario">
-            <h2>Lorem ipsum dolor sit
-                amet, consequentur
-                limites sulivan.</h2>
-
-            <form>
-                <ul>
-                    <li>
-                        <label for="name">Nome e apelidos:</label>
-                        <input type="text" name="name" id="name"/>
-                      </li>
-                      <li>
-                        <label for="address">Dirección:</label>
-                        <input type="text" name="address" id="address">
-                      </li>
-                      <li>
-                        <label for="provincia">Provincia:</label>
-                        <select name="provincia" id="provincia">
-                            <option value="coruna">A Coruña</option>
-                            <option value="lugo">Lugo</option>
-                            <option value="ourense">Ourense</option>
-                            <option value="pontevedra">Pontevedra</option>
-                        </select>
-                      </li>
-                      <li>
-                        <label for="comentarios">Comentarios:</label>
-                        <textarea name="comentarios" id="comentarios"></textarea>
-                      </li>
-                      <li>
-                        <label for="newsletter">Recibir Newsletter?</label>
-                        <input type="checkbox" name="newsletter" id="newsletter" value="si">            
-                      </li>
-                </ul>
-            </form> 
-        </section>
+        <ul id="lista-vacas">
+          <li>
+            <article>
+              <figure>
+                <img src="/media/vaca1.jpg" alt="Foto de una vaca" />
+              </figure>
+              <h2>Vaca 1</h2>
+              <p>
+                Nulla lobortis, sapien sit amet hendrerit ullamcorper, risus
+                magna venenatis elit, nec condimentum nisl massa id ex. Sed
+                fermentum orci nec erat cursus cursus
+              </p>
+              <a href="">Comprar</a>
+            </article>
+          </li>
+          <li>
+            <article>
+              <figure>
+                <img src="/media/vaca2.jpg" alt="Foto de una vaca" />
+              </figure>
+              <h2>Vaca 2</h2>
+              <p>
+                Nulla lobortis, sapien sit amet hendrerit ullamcorper, risus
+                magna venenatis elit, nec condimentum nisl massa id ex. Sed
+                fermentum orci nec erat cursus cursus
+              </p>
+              <a href="">Comprar</a>
+            </article>
+          </li>
+          <li>
+            <article>
+              <figure>
+                <img src="/media/vaca3.jpg" alt="Foto de una vaca" />
+              </figure>
+              <h2>Vaca 3</h2>
+              <p>
+                Nulla lobortis, sapien sit amet hendrerit ullamcorper, risus
+                magna venenatis elit, nec condimentum nisl massa id ex. Sed
+                fermentum orci nec erat cursus cursus
+              </p>
+              <a href="">Comprar</a>
+            </article>
+          </li>
+        </ul>
+      </section>
+      <section id="formulario">
+        <h2>Lorem ipsum dolor sit amet, consequentur limites sulivan.</h2>
+        <form>
+          <ul>
+            <li>
+              <fieldset>
+                <label for="name">Nome e apelidos:</label>
+                <input type="text" name="name" id="name" />
+              </fieldset>
+            </li>
+            <li>
+              <fieldset>
+                <label for="address">Dirección:</label>
+                <input type="text" name="address" id="address" />
+              </fieldset>
+            </li>
+            <li>
+              <fieldset>
+                <label for="provincia">Provincia:</label>
+                <select name="provincia" id="provincia">
+                  <option value="coruna">A Coruña</option>
+                  <option value="lugo">Lugo</option>
+                  <option value="ourense">Ourense</option>
+                  <option value="pontevedra">Pontevedra</option>
+                </select>
+              </fieldset>
+            </li>
+            <li>
+              <fieldset>
+                <label for="comentarios">Comentarios:</label>
+                <textarea name="comentarios" id="comentarios"></textarea>
+              </fieldset>
+            </li>
+            <li>
+              <fieldset class="newsletter">
+                <label for="newsletter">Recibir Newsletter?</label>
+                <input
+                  type="checkbox"
+                  name="newsletter"
+                  id="newsletter"
+                  value="si"
+                />
+              </fieldset>
+            </li>
+            <li><a href="" class="enviar">Enviar</a></li>
+          </ul>
+        </form>
+      </section>
     </main>
-    <footer>
-
-    </footer>    
-</body>
+    <footer></footer>
+  </body>
 </html>
