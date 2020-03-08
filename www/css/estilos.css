@@ -130,6 +130,8 @@ textarea {
   background-color: #f2994a;
   border-radius: 0;
   margin-bottom: 1rem;
+  padding: 0.25rem;
+  color: white;
 }
 
 section#formulario form ul li fieldset.newsletter {
@@ -199,8 +201,14 @@ footer {
   }
 
   section#formulario form ul li {
-    flex-basis: 45%;
-    margin: 0.5rem;
+    flex-basis: 50%;
+    margin: 0rem;
+    padding: 1rem;
+    box-sizing: border-box;
+  }
+
+  section#formulario form ul li.comentarios {
+    flex-basis: 100%;
   }
 
   footer {

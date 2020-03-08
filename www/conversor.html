@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Conversor de divisas</title>
+    <link rel="stylesheet" href="/css/conversor.css" />
+  </head>
+  <body>
+    <header><h1>Conversor de divisas</h1></header>
+    <main>
+      <form id="form">
+        <fieldset>
+          <label for="ammount">Cantidad</label>
+          <input type="text" id="ammount" name="ammount" />
+          <label for="coinselector1">de</label>
+          <select
+            name="coinselector1"
+            id="coinselector1"
+            class="coinselector"
+          ></select>
+          <label for="coinselector2">a</label>
+          <select
+            name="coinselector2"
+            id="coinselector2"
+            class="coinselector"
+          ></select>
+        </fieldset>
+
+        <button type="submit" id="convert">Convertir</button>
+      </form>
+      <h2 id="result"></h2>
+    </main>
+    <script src="/js/entrega-5/conversor.js"></script>
+  </body>
+</html>
