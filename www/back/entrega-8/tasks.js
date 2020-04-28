@@ -25,37 +25,68 @@ const datefns = require("date-fns");
 const chalk = require("chalk");
 
 const {
-  addTask,
-  // removeTask,
-  showList,
-  markDone,
-  markUndone,
-  clearList,
+  addTodo,
+  listTodos,
+  markAsDone,
+  markAsUndone,
+  cleanTodos,
+  dropTodos,
+  deleteTodo,
 } = require("./lib/functions.js");
 
-const { _, priority, list, done, undone, clean } = minimist(
+const { _, priority, list, done, undone, clean, remove, drop } = minimist(
   process.argv.slice(2)
 );
 
 if (clean) {
-  clearList();
-  process.exit();
+  cleanTodos().then(() => {
+    console.log(chalk.green("Lista de tareas limpia"));
+    process.exit();
+  });
 }
 
 if (list) {
-  showList();
-  process.exit();
+  listTodos().then(() => {
+    process.exit();
+  });
 }
 
 if (done) {
-  markDone({ index });
-  process.exit();
+  markAsDone({ index }).then(() => {
+    console.log(chalk.green("Tarea marcada como hecha correctamente"));
+    process.exit();
+  });
 }
 
 if (undone) {
-  markUndone({ index });
-  process.exit();
+  markAsUndone({ index }).then(() => {
+    console.log(chalk.green("Tarea marcada no como hecha correctamente"));
+    process.exit();
+  });
 }
 
-addTask({ text: _.join(" "), priority });
-// clearList();
+if (remove) {
+  deleteTodo({ index }).then(() => {
+    console.log(chalk.yellow(`Has eliminado la tarea ${index}`));
+    process.exit();
+  });
+}
+
+if (drop) {
+  dropTodos().then(() => {
+    console.log(chalk.yellow("Has eliminado tu lista de tareas"));
+    process.exit();
+  });
+}
+
+const todoText = _.join(" ");
+
+if (todoText) {
+  addTodo({
+    text: todoText,
+    priority,
+  }).then(() => {
+    console.log(chalk.green("La tarea ha sido añadida correctamente"));
+    process.exit();
+  });
+}

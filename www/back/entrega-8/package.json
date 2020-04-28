@@ -1,7 +1,6 @@
 {
   "name": "entrega-8",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -12,7 +11,13 @@
   "dependencies": {
     "chalk": "^4.0.0",
     "date-fns": "^2.12.0",
+    "dotenv": "^8.2.0",
     "fs-extra": "^9.0.0",
     "minimist": "^1.2.5"
-  }
+  },
+  "directories": {
+    "lib": "lib"
+  },
+  "devDependencies": {},
+  "description": ""
 }
