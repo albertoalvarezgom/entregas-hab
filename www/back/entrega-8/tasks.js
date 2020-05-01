@@ -52,22 +52,15 @@ if (list) {
 }
 
 if (done) {
-  markAsDone({ index }).then(() => {
+  markAsDone({ index: done }).then(() => {
     console.log(chalk.green("Tarea marcada como hecha correctamente"));
     process.exit();
   });
 }
 
 if (undone) {
-  markAsUndone({ index }).then(() => {
+  markAsUndone({ index: undone }).then(() => {
     console.log(chalk.green("Tarea marcada no como hecha correctamente"));
-    process.exit();
-  });
-}
-
-if (remove) {
-  deleteTodo({ index }).then(() => {
-    console.log(chalk.yellow(`Has eliminado la tarea ${index}`));
     process.exit();
   });
 }

@@ -106,12 +106,12 @@ async function listTodos() {
       dateLocaleConfig
     );
     //Si el la tarea está hecha, tachamos el texto con chalk. Si no, lo mostramos tal cual
-    const taskText = task.done ? chalk.strikethrough(task.text) : task.text;
+    const taskText = task.done ? chalk.inverse(task.text) : task.text;
     //Armamos la tarea con todas las constantes definidas anteriormente.
     //Al index le añadimos 1 para que no empiece en 0
     const taskDisplay = `${
       index + 1
-    } - ${taskStatus} ${taskText}(añadida hace ${taskHumanDate})`;
+    } - ${taskStatus} ${taskText} (añadida hace ${taskHumanDate})`;
 
     //Si la tarea tiene prioridad alta la mostramos en color rojo. Si no, en color azul
     if (task.priority === "high") {
@@ -130,7 +130,7 @@ async function markAsDone({ index }) {
 
   //Marcamos la key done como true para la tarea con el índice seleccionado
   //Recordar que al índice le sumáramos 1, así que tenemos que restarlo aquí para que cuadre
-  currentTodos.tasks[index - 1].done === true;
+  currentTodos.tasks[index - 1].done = true;
 
   //Ejecutamos la función de guardado con los cambios realizados
   await saveTodosToFile(currentTodos);
@@ -143,7 +143,7 @@ async function markAsUndone({ index }) {
 
   //Marcamos la key done como false para la tarea con el índice seleccionado
   //Recordar que al índice le sumáramos 1, así que tenemos que restarlo aquí para que cuadre
-  currentTodos.tasks[index - 1].done === false;
+  currentTodos.tasks[index - 1].done = false;
 
   //Ejecutamos la función de guardado con los cambios realizados
   await saveTodosToFile(currentTodos);
@@ -168,17 +168,6 @@ async function dropTodos() {
 
   //El array de tareas estará vacío
   currentTodos.tasks = [];
-
-  //Ejecutamos la función de guardado con los cambios realizados
-  await saveTodosToFile(currentTodos);
-}
-
-async function deleteTodo({ index }) {
-  //Cargamos nuestro fichero en una const llamando a la primera función
-  const currentTodos = await readTodoList();
-
-  //Eliminamos del array el índice seleccionado
-  const deleted = currentTodos.tasks.splice(index, 1);
 
   //Ejecutamos la función de guardado con los cambios realizados
   await saveTodosToFile(currentTodos);
