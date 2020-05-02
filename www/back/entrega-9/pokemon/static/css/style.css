@@ -1,0 +1,170 @@
+@import url("https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;500;600;700;800&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Baloo 2", sans-serif;
+  margin: 0 3rem 2rem 3rem;
+}
+
+body header h1 {
+  text-align: center;
+  font-size: 4rem;
+  padding: 1rem;
+}
+
+button a {
+  color: white;
+  text-decoration: none;
+}
+
+body header h1 a {
+  color: #739fd9;
+  text-decoration: none;
+}
+
+body form fieldset {
+  border: none;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  font-weight: 400;
+  font-size: 2rem;
+}
+
+body form fieldset input {
+  margin: 0 auto 1rem auto;
+  border: 2px solid #739fd9;
+  background-color: white;
+  font-weight: 400;
+  font-size: 1rem;
+  padding: 0 1rem;
+  border-radius: 0.5rem;
+}
+
+button {
+  color: white;
+  background-color: #739fd9;
+  border: none;
+  border-radius: 0.5rem;
+  font-weight: 400;
+  font-size: 1rem;
+  padding: 0.2rem 1rem;
+  margin: 0 auto;
+  display: block;
+}
+
+button:hover {
+  background-color: #f25050;
+  color: white;
+}
+
+a {
+  color: black;
+  text-align: center;
+  text-decoration: none;
+  font-family: "Baloo 2", sans-serif;
+  font-weight: 400;
+}
+
+p {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+p.type {
+  color: #96a5b3;
+}
+
+ul {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+li {
+  display: flex;
+  flex-direction: column;
+  width: 200px;
+  padding: 1rem 0;
+  margin: 0 2rem;
+  align-items: center;
+}
+
+li img {
+  width: 50%;
+  height: 50%;
+  flex-grow: 0;
+}
+
+#name {
+  font-weight: 600;
+  padding: 0 1rem;
+}
+
+#name:hover {
+  color: #f25050;
+}
+
+.pokemon {
+  text-align: center;
+}
+
+.external {
+  color: red;
+}
+
+nav {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  justify-content: center;
+  margin-bottom: 1rem;
+  align-items: center;
+}
+
+nav div {
+  width: 200px;
+}
+
+.arrow {
+  color: white;
+  background-color: #96a5b3;
+  border: none;
+  border-radius: 0.5rem;
+  font-family: "Baloo 2", sans-serif;
+  font-weight: 400;
+  font-size: 1rem;
+  padding: 0.2rem 1rem;
+  margin: 2rem;
+  display: inline-block;
+  height: 30px;
+  width: 100px;
+}
+
+figure img {
+  max-width: 300px;
+}
+
+#ficha {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 2rem;
+}
+
+#ficha dl {
+  text-align: left;
+  margin-left: 3rem;
+  padding-left: 2rem;
+}
+
+#ficha dl dt {
+  font-weight: 600;
+}
+
+#ficha dl dd {
+  color: #96a5b3;
+}

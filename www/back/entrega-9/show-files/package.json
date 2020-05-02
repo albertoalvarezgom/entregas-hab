@@ -1,0 +1,17 @@
+{
+  "name": "show-files",
+  "version": "1.0.0",
+  "description": "",
+  "main": "files.js",
+  "dependencies": {
+    "chalk": "^4.0.0",
+    "minimist": "^1.2.5"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
